@@ -1,0 +1,62 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+.bg-color{
+  background-color: #01CBC6;
+}
+.card-image {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 80%;
+  height: 100%;
+}
+
+.text-size{
+  font-size: 15px;
+}
+.bg-card{
+ background-color:  #ffffff;
+}
+.bg-ctitle{
+  background-color: #2E2E2E;
+}
+
+.mdb-color{
+  background-color: #01CBC6;
+  
+}
+.height{
+  height: 20px;
+}
+
+.card-color{
+  background-color: black;
+}
+
+
+ 
+ .MDBCarousel
+ {
+   width: 100%;
+   
+ }
+ .MDBCarouselInner{
+  max-height: 300px !important;
+ }
+
+ .btn-color{
+   background-color: darkorange;
+   border-color: greenyellow;
+ }
+ 
+.text{
+  font-size: medium;
+  font-weight: bolder;
+}
+.text-size{
+  font-size: small;
+}
