@@ -125,10 +125,6 @@ class Menu extends Component {
       
       )}
               </MDBNavItem>
-
-             
-            </MDBNavbarNav>
-            <MDBNavbarNav right>
               <MDBNavItem active className="mt-2 ml-2">
               <Link
          
@@ -142,6 +138,7 @@ class Menu extends Component {
               </MDBNavItem>
              
             </MDBNavbarNav>
+            
           </MDBCollapse>
         </MDBNavbar>
       );

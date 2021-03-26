@@ -5,6 +5,8 @@ import Base from "./Base";
 import Card from "./Card";
 import { cartEmpty, loadCart } from "./helper/cartHelper";
 import { signout, isAutheticated } from "../auth/helper";
+import StripeCheckout from "./StripeCheckout";
+
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
@@ -19,9 +21,7 @@ const Cart = () => {
          
        
       <div>
-          {!isAutheticated() && (
-            <h1>You should login first</h1>
-          )}
+         
 
           {isAutheticated()&& ( 
         <h2>This section is to load products</h2> )}
@@ -53,8 +53,10 @@ const Cart = () => {
     <Base title="Cart Page" description="Ready to checkout">
        <div className="row text-center ml-4 mb-4">
      
-        <div className="col-6 ">{loadAllProducts()}</div>
-        <div className="col-3">Checkout section</div>
+        <div className="col-3 mt-4 mb-4">{loadAllProducts()}</div>
+        <div className="col-5 ml-4">
+        <StripeCheckout products={products} setReload={setReload} />
+        Checkout section</div>
       
       </div>
       </Base>

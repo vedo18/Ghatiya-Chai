@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-
   },
   "author": "Saket",
   "license": "ISC",
@@ -27,6 +26,7 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
     "npm": "^6.13.0",
+    "stripe": "^8.129.0",
     "uuid": "^3.3.3"
   }
 }
